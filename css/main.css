@@ -1,5 +1,41 @@
 body {
   background: blue; }
 
+/****** typography ******/
 h1 {
   color: red; }
+
+/****** layout ******/
+.navbar {
+  margin-bottom: 0 !important; }
+
+.navbar-happster {
+  background: #7157BE; }
+  .navbar-happster a {
+    color: #fff; }
+
+.footer .footer-copyright {
+  background: #573BA9;
+  color: #fff;
+  padding: 10px 0; }
+
+/* homepage */
+#hp-container-1 {
+  background: linear-gradient(rgba(87, 59, 169, 0.35), rgba(87, 59, 169, 0.35)), url(/assets/images/office-background.jpg);
+  background-size: cover;
+  padding: 80px 0 150px;
+  background-position: center center; }
+
+#hp-top-title {
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+
+#hp-search-form {
+  max-width: 500px;
+  margin: 30px auto 0; }
+
+#hp-container-2 {
+  padding: 60px 0 80px; }
+
+.hp-icon {
+  max-width: 80px; }
