@@ -1,16 +1,10 @@
 @import "variables.scss";
 
 body {
-	background: blue;
+	color: #5A5A5A !important;
 }
 
-/****** typography ******/
-
-h1 {
-	color: red;
-}
-
-/****** layout ******/
+/****** LAYOUT ******/
 
 .navbar {
 	margin-bottom: 0 !important;
@@ -19,8 +13,18 @@ h1 {
 .navbar-happster {
     background: $purple;
 
-    a {
+    .logo {
     	color: #fff;
+    	font-family: montserrat;
+    	font-weight: bold;
+
+    	#logo-text {
+    		text-transform: uppercase;
+		    letter-spacing: 1px;
+		    font-weight: 200;
+		    font-family: montserrat;
+		    font-size: 14px;
+    	}
     }
 }
 
@@ -63,8 +67,23 @@ h1 {
 }
 
 .hp-icon {
-	max-width: 80px;
+	max-height: 80px;
 }
 
+
+/******** BUTTONS *******/
+
+.btn.btn-nav {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transform: all 300ms ease;
+
+    &:hover {
+    	background: $dark-purple;
+    	color: #fff;
+    }
+}
 
 
