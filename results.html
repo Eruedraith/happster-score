@@ -7,32 +7,168 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="/js/circle.min.js"></script>
+		<script src="https://use.fontawesome.com/818aa3bc58.js"></script>
+		<link rel="shortcut icon" href="assets/images/favicon/hs-favicon.ico" />
+        <link rel="icon" type="image/png" href="assets/images/favicon/hs-favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/images/favicon/hs-favicon-16x16.png" sizes="16x16" />
 		<title>Happster Score</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-happster">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="logo navbar-brand">happster <span id="logo-text">score</span></a>
-				</div>s
+					<a  href="/" class="logo navbar-brand">happster <span id="logo-text">score</span></a>
+				</div>
 				<button type="button" class="btn btn-nav navbar-btn navbar-right">Learn more</button>
 			</div>
 		</nav>
 		<div class="container-fluid">
 			<div class="row">
+			  <!-- SIDEBAR -->
 				<div class="col-lg-4" id="sidebar">
 					<img class="center-block" id="company-logo" src="/assets/images/logo-placeholder.png">
-					<div class="circle" id="circles-1"></div>
+					<div class="circle text-center" id="circles-1"></div>
+					<h5 class="text-center"><strong>38 Reviews</strong></h5>	
+					<div class="company-info-container">
+						<div class="company-info">
+							<img src="/assets/images/sloth-pos-2x.jpg">
+							<h3>78% <small>positive</small></h3>
+							<span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+						</div>
+						<div class="company-info">
+							<img src="/assets/images/bull-head-2x.jpg">
+							<h3>5 <small>potential bull@#$% reviews</small></h3>
+							<span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+						</div>
+						<div class="company-info">
+							<img src="/assets/images/float.png">
+							<h3>x12 <small>helpful</small></h3>
+							<span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+						</div>
+							<div class="company-info">
+							<div id="rating">
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-half-o" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+								<h3> 4.5 Stars</h3>
+							</div>
+						</div>
+					</div>
+					<h2 class="text-center"><i class="fa fa-area-chart" aria-hidden="true"></i> Trends</h2>
+					<div class="company-trends">
+						<p>Pros:</p>
+					</div>
+					<div class="company-trends">
+						<p>Cons:</p>
+					</div>
+					<div class="company-trends">
+						<p>Advice to Management:</p>
+					</div>
+
 				</div>
-				<div class="col-lg-8">
+			  <!-- END SIDEBAR -->
+				<div class="col-lg-8" id="reviews-container">
+					<div class="reviews-container__action-bar">
+						<h2>Employee Reviews</h2>
+						<img id="reviews-logo" src="/assets/images/logo-placeholder.png">
+					</div>
+					<div class="reviews-card">
+						<div class="reviews-card__header">
+							<div class="reviews-card__rating">
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-half-o" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+							</div>
+							<div class="reviews-card__icons">
+								<img src="/assets/images/negative.png">
+								<img src="/assets/images/float.png">
+								<small class="helpful-rating"><strong>10</strong> Helpful</small>
+							</div>
+						</div>
+						<div class="reviews-card__body">
+							<h4 class="text-center">“Work Disorganized + Stressed (Not 'Happy')”</h4>
+							<p>PROS:</p>
+							<ul>
+								<li>Great office location</li>
+								<li>Fun and compelling products and branding</li>
+								<li>Strong design story</li>
+							</ul>
+							<p>CONS:</p>
+							<ul>
+								<li>Unorganized and reactionary approach from management / leadership</li>
+								<li>True company culture is diametrically opposed to the “Work Happy” mission of the company. Cliquey sales environment and blatant favoritism hurts everyone and leads to an environment of mistrust.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="reviews-card">
+						<div class="reviews-card__header">
+							<div class="reviews-card__rating">
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+							</div>
+							<div class="reviews-card__icons">
+								<img src="/assets/images/sloth-pos-2x.jpg">
+								<img src="/assets/images/float.png">
+								<small class="helpful-rating"><strong>32</strong> Helpful</small>
+							</div>
+						</div>
+						<div class="reviews-card__body">
+							<h4 class="text-center">“Amazing Place to Work"</h4>
+							<p>PROS:</p>
+							<ul>
+								<li>Wonderful team, fun events, exceptional CEO and leadership team. If you work hard, you are rewarded.</li>
+							</ul>
+							<p>CONS:</p>
+							<ul>
+								<li>Obvious start-up issues, but the team was able to overcome them and thrive.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="reviews-card">
+						<div class="reviews-card__header">
+							<div class="reviews-card__rating">
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+								<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+							</div>
+							<div class="reviews-card__icons">
+								<img src="/assets/images/negative.png">
+								<img src="/assets/images/float.png">
+								<small class="helpful-rating"><strong>10</strong> Helpful</small>
+							</div>
+						</div>
+						<div class="reviews-card__body">
+							<h4 class="text-center">“Poor management, Cliquey environment</h4>
+							<p>PROS:</p>
+							<ul>
+								<li>Great office location</li>
+								<li>Fun and compelling products and branding</li>
+								<li>Strong design story</li>
+							</ul>
+							<p>CONS:</p>
+							<ul>
+								<li>Unorganized and reactionary approach from management / leadership</li>
+								<li>True company culture is diametrically opposed to the “Work Happy” mission of the company. Cliquey sales environment and blatant favoritism hurts everyone and leads to an environment of mistrust.</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-fluid footer" >
+		<div class="container-fluid footer">
 			<div class="row"> 
 				<div class="col-lg-12 text-center footer-copyright">
-				<small>© Copyright 2017 Aventr, LLC All Rights Reserved.</small>
+				<small>Powered with ❤️ by <a href="https://www.aventr.com">Aventr</a></small>
 				</div>
 			</div>
 		</div>
