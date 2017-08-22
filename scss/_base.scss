@@ -86,9 +86,6 @@ body {
 
 /* results page */
 
-#sidebar {
-}
-
 #company-logo {
 	max-width: 150px;
 	margin: 20px auto 32px;
@@ -289,10 +286,19 @@ body {
 	margin: 30px auto 0;
 }
 
-#hp-search-form__navbar {
+#happster-search-form__navbar {
 	
-	>input {
+	input {
 		padding: 10px 19px;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		transition: all .5s ease;
+		padding: 10px 19px;
+		width: 200px;
+
+		&:focus {
+			width: 250px;
+		}
 	}
 }
 

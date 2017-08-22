@@ -224,8 +224,15 @@ body {
   max-width: 500px;
   margin: 30px auto 0; }
 
-#hp-search-form__navbar > input {
-  padding: 10px 19px; }
+#happster-search-form__navbar input {
+  padding: 10px 19px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+  padding: 10px 19px;
+  width: 200px; }
+  #happster-search-form__navbar input:focus {
+    width: 250px; }
 
 input.happster-search {
   background: rgba(255, 255, 255, 0.4);
