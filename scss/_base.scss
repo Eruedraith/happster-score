@@ -59,7 +59,7 @@ body {
         rgba(87,59,169,.35)
       ),
       /* image */
-      url(/assets/images/office-background.jpg);
+      url(/assets/images/office-background-blur.jpg);
 	background-size: cover;
 	padding: 80px 0 150px;
 	background-position: center center;
@@ -70,17 +70,18 @@ body {
 	text-shadow: 0 2px 3px rgba(0,0,0,.4);
 }
 
-#hp-search-form {
-	max-width: 500px;
-	margin: 30px auto 0;
-}
-
 #hp-container-2 {
 	padding: 60px 0 80px;
 }
 
 .hp-icon {
 	max-height: 80px;
+}
+
+#hp-container-3 {
+	padding: 50px 0;
+	background: $light-purple;
+	color: #fff;
 }
 
 /* results page */
@@ -179,6 +180,13 @@ body {
 
 /******** BUTTONS *******/
 
+.btn {
+	&:focus {
+		outline: none !important;
+    	color: #fff;
+	}
+}
+
 .btn.btn-nav {
     background: none;
     color: #fff;
@@ -191,6 +199,44 @@ body {
     	color: #fff;
     }
 }
+
+.btn.happster-btn {
+	background: $purple;
+	color: #fff;
+}
+
+// search button
+.btn.happster-search__btn {
+	background: $purple;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    transition: all 300ms ease;
+    padding: 14px 19px;
+    border: 1px solid #fff;
+
+    &:hover {
+    	color: #fff;
+    	background: $dark-purple;
+    }
+
+    &:focus {
+    	color: #fff;
+    }
+}
+// search button in navbar
+#happster-search__navbar-btn {
+	padding: 9px 0 9px 9px;
+    font-size: 17px;
+    background: none;
+    border: none;
+
+    &:hover {
+    	color: $dark-purple;
+    	background: none;
+    	border: none;
+    }
+}
+
 
 /******* CIRCLES.JS *******/
 
@@ -227,3 +273,58 @@ body {
 	color: $purple;
 }
 
+/******* SEARCH BARS ***********/
+
+#hp-search-form {
+	max-width: 500px;
+	margin: 30px auto 0;
+}
+
+#hp-search-form__navbar {
+	
+	>input {
+		padding: 10px 19px;
+	}
+}
+
+input.happster-search {
+	background: rgba(255,255,255,.4);
+    border: none;
+    border-radius: 20px;
+    padding: 24px 15px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    font-family: $font-regular;
+
+    &:focus{
+    	outline: none;
+    	box-shadow: none;
+    	border-color: #fff;
+    }
+}
+
+input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  opacity: .7;
+  font-size: 18px;
+  font-family: $font-regular;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: .7;
+  font-size: 18px;
+  font-family: $font-regular;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+  opacity: .7;
+  font-size: 18px;
+  font-family: $font-regular;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+  opacity: .7;
+  font-size: 18px;
+  font-family: $font-regular;
+}

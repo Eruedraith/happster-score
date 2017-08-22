@@ -15,11 +15,16 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-happster">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="navbar-header">
 					<a  href="/" class="logo navbar-brand">happster <span id="logo-text">score</span></a>
 				</div>
-				<button type="button" class="btn btn-nav navbar-btn navbar-right">Learn more</button>
+				<form class="navbar-form navbar-right">
+					<div class="form-group" id="happster-search-form__navbar">
+						<input class="happster-search form-control" type="text" class="form-control" placeholder="Find my company...">
+					</div>
+					<button type="submit" id="happster-search__navbar-btn" class="btn happster-search__btn"><i class="glyphicon glyphicon-search"></i></button>
+				</form>
 			</div>
 		</nav>
 		<div class="container-fluid">
@@ -56,15 +61,17 @@
 							</div>
 						</div>
 					</div>
-					<h2 class="text-center"><i class="fa fa-area-chart" aria-hidden="true"></i> Trends</h2>
-					<div class="company-trends">
-						<p>Pros:</p>
-					</div>
-					<div class="company-trends">
-						<p>Cons:</p>
-					</div>
-					<div class="company-trends">
-						<p>Advice to Management:</p>
+					<div class="company-info-container">
+						<h2 class="text-center"><i class="fa fa-area-chart" aria-hidden="true"></i> Trends</h2>
+						<div class="company-trends">
+							<p>PROS</p>
+						</div>
+						<div class="company-trends">
+							<p>CONS:</p>
+						</div>
+						<div class="company-trends">
+							<p>Advice to Management:</p>
+						</div>
 					</div>
 
 				</div>
