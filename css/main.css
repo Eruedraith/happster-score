@@ -86,7 +86,7 @@ body {
 
 #hp-container-3 {
   padding: 50px 0;
-  background: #937DD5;
+  background: #7FDBDF;
   color: #fff; }
 
 /* results page */
@@ -163,8 +163,15 @@ body {
     color: #fff; }
 
 .btn.happster-btn {
-  background: #7157BE;
-  color: #fff; }
+  background: #54C5C9;
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  transition: all 300ms ease; }
+  .btn.happster-btn:hover {
+    background: #169298;
+    color: #fff; }
 
 .btn.happster-search__btn {
   background: #7157BE;

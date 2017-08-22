@@ -80,7 +80,7 @@ body {
 
 #hp-container-3 {
 	padding: 50px 0;
-	background: $light-purple;
+	background: $light-blue;
 	color: #fff;
 }
 
@@ -201,8 +201,17 @@ body {
 }
 
 .btn.happster-btn {
-	background: $purple;
-	color: #fff;
+	background: $blue;
+    color: #fff;
+    padding: 16px 20px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    transition: all 300ms ease;
+
+    &:hover {
+    	background: $dark-blue;
+    	color: #fff;
+    }
 }
 
 // search button
