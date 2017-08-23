@@ -52,3 +52,17 @@ small {
     font-family: $font-regular; 
 }
 
+.btn {
+    font-family: $font-regular !important;
+}
+
+/* special classes */
+
+#happster-text {
+    font-family: monserrat, $font-bold, helvetica;
+    color: $blue;
+    font-weight: bold;
+}
+
+
+

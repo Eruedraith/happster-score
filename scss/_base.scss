@@ -71,7 +71,7 @@ body {
 }
 
 #hp-container-2 {
-	padding: 60px 0 80px;
+	padding: 70px 0 90px;
 }
 
 .hp-icon {
@@ -79,10 +79,27 @@ body {
 }
 
 #hp-container-3 {
-	padding: 50px 0;
-	background: $light-blue;
-	color: #fff;
+	color: $blue;
+	padding: 20px 0 0;
+	border-top: 1px solid $background-color;
+
+
+	button {
+		margin-top: 20px;
+	}
 }
+
+#hp-container-3__img {
+	position: absolute;
+    left: 0;
+    max-width: 476px;
+}
+
+#cta-img {
+	max-width: 100px;
+	margin-top: 30px;
+}
+
 
 /* results page */
 
@@ -209,6 +226,12 @@ body {
     	background: $dark-blue;
     	color: #fff;
     }
+}
+
+.happster-btn__subtitle {
+	display: block;
+	font-size: 12px;
+	margin-top: 8px;
 }
 
 // search button

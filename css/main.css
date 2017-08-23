@@ -33,6 +33,15 @@ small {
   font-size: 13px !important;
   font-family: "proxima-nova-regular", "open sans", helvetica neue, helvetica, arial, sans-serif; }
 
+.btn {
+  font-family: "proxima-nova-regular", "open sans", helvetica neue, helvetica, arial, sans-serif !important; }
+
+/* special classes */
+#happster-text {
+  font-family: monserrat, "proxima-nova-bold", "open sans", helvetica neue, helvetica, arial, sans-serif, helvetica;
+  color: #54C5C9;
+  font-weight: bold; }
+
 body {
   color: #5A5A5A !important; }
 
@@ -79,15 +88,26 @@ body {
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
 
 #hp-container-2 {
-  padding: 60px 0 80px; }
+  padding: 70px 0 90px; }
 
 .hp-icon {
   max-height: 80px; }
 
 #hp-container-3 {
-  padding: 50px 0;
-  background: #7FDBDF;
-  color: #fff; }
+  color: #54C5C9;
+  padding: 20px 0 0;
+  border-top: 1px solid #eff3f8; }
+  #hp-container-3 button {
+    margin-top: 20px; }
+
+#hp-container-3__img {
+  position: absolute;
+  left: 0;
+  max-width: 476px; }
+
+#cta-img {
+  max-width: 100px;
+  margin-top: 30px; }
 
 /* results page */
 #company-logo {
@@ -172,6 +192,11 @@ body {
   .btn.happster-btn:hover {
     background: #169298;
     color: #fff; }
+
+.happster-btn__subtitle {
+  display: block;
+  font-size: 12px;
+  margin-top: 8px; }
 
 .btn.happster-search__btn {
   background: #7157BE;
@@ -275,3 +300,12 @@ input[type="text"]::-webkit-input-placeholder {
   opacity: .7;
   font-size: 18px;
   font-family: "proxima-nova-regular", "open sans", helvetica neue, helvetica, arial, sans-serif; }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #hp-container-1 {
+    padding: 24px 15px 50px; }
+  #hp-container-2 {
+    padding: 13px 15px 50px; }
+  .hp-box {
+    margin-top: 50px; } }
