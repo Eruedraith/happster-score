@@ -36,7 +36,7 @@ small {
 .btn {
   font-family: "proxima-nova-regular", "open sans", helvetica neue, helvetica, arial, sans-serif !important; }
 
-/* special classes */
+/* utility classes */
 #happster-text {
   font-family: monserrat, "proxima-nova-bold", "open sans", helvetica neue, helvetica, arial, sans-serif, helvetica;
   color: #54C5C9;
@@ -116,7 +116,7 @@ body {
 
 #reviews-container {
   background: #eff3f8;
-  padding-top: 20px; }
+  padding: 20px 15px; }
 
 .reviews-container__action-bar {
   display: flex;
@@ -221,6 +221,21 @@ body {
     background: none;
     border: none; }
 
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #7157BE;
+  border: 1px solid #7157BE;
+  color: #fff;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 1s ease; }
+
+#back-to-top.show {
+  opacity: 1; }
+
 /******* CIRCLES.JS *******/
 .circles-text {
   font-family: "proxima-nova-bold", "open sans", helvetica neue, helvetica, arial, sans-serif; }
@@ -249,6 +264,18 @@ body {
   max-width: 500px;
   margin: 30px auto 0; }
 
+#happster-search-form__mobile {
+  margin: 20px; }
+  #happster-search-form__mobile input {
+    background: #fff;
+    color: #5a5a5a;
+    border: none; }
+  #happster-search-form__mobile > div > button {
+    border: none; }
+
+#mobile-only-search {
+  background: #eff3f8; }
+
 #happster-search-form__navbar input {
   padding: 10px 19px;
   -webkit-transition: all .5s ease;
@@ -267,11 +294,13 @@ input.happster-search {
   color: #fff;
   font-size: 18px;
   border: 1px solid #fff;
-  font-family: "proxima-nova-regular", "open sans", helvetica neue, helvetica, arial, sans-serif; }
+  font-family: "proxima-nova-regular", "open sans", helvetica neue, helvetica, arial, sans-serif;
+  transition: all 300ms ease; }
   input.happster-search:focus {
     outline: none;
     box-shadow: none;
-    border-color: #fff; }
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.5); }
 
 input[type="text"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -308,4 +337,11 @@ input[type="text"]::-webkit-input-placeholder {
   #hp-container-2 {
     padding: 13px 15px 50px; }
   .hp-box {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .company-info-container {
+    width: 90%; }
+  #sidebar {
+    padding: 20px 15px 30px; }
+  .reviews-container__action-bar #reviews-logo {
+    max-height: 30px;
+    margin: 40px 0 10px; } }

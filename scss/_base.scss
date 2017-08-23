@@ -111,7 +111,7 @@ body {
 
 #reviews-container {
 	background: #eff3f8;
-	padding-top: 20px;
+	padding: 20px 15px;
 }
 
 .reviews-container__action-bar {
@@ -266,6 +266,24 @@ body {
     }
 }
 
+// back to top button for mobile
+
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+	background: $purple;
+	border: 1px solid $purple;
+	color: #fff;
+	box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
 
 /******* CIRCLES.JS *******/
 
@@ -309,6 +327,25 @@ body {
 	margin: 30px auto 0;
 }
 
+#happster-search-form__mobile {
+	 margin: 20px;
+
+	 input {
+	 	background: #fff;
+	 	color: #5a5a5a;
+	 	border: none;
+	 }
+
+	 >div>button {
+	 	border: none;
+	 }
+}
+
+#mobile-only-search {
+	background: $background-color;
+}
+
+
 #happster-search-form__navbar {
 	
 	input {
@@ -323,6 +360,7 @@ body {
 			width: 250px;
 		}
 	}
+
 }
 
 input.happster-search {
@@ -334,11 +372,13 @@ input.happster-search {
     font-size: 18px;
     border: 1px solid #fff;
     font-family: $font-regular;
+    transition: all 300ms ease;
 
     &:focus{
     	outline: none;
     	box-shadow: none;
     	border-color: #fff;
+    	background: rgba(255,255,255,.5);
     }
 }
 
