@@ -22,6 +22,6 @@ $(document).ready(function(){
 	}
 
 	$('#cta__close-btn').click(function() {
-		$("#cta").addClass('hide');
+		$("#cta").addClass('animated zoomOutLeft');
 	});
 })
