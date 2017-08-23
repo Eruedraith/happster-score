@@ -228,6 +228,24 @@ body {
     }
 }
 
+.happster-btn.clear {
+	border: 1px solid $purple;
+	color: $purple;
+	background: none;
+	padding: 5px 15px;
+	border-radius: 150px;
+
+	&:hover {
+		background: none;
+		border: 1px solid $dark-purple;
+		color: $dark-purple;
+	}
+
+	&:focus {
+		color: $dark-purple;
+	}
+}
+
 .happster-btn__subtitle {
 	display: block;
 	font-size: 12px;
@@ -289,6 +307,78 @@ body {
 
 .circles-text {
 	font-family: $font-bold;
+}
+
+/******** CTA *********/
+
+#cta {
+	opacity: 0;
+	position: fixed;
+	bottom: 50px;
+	left: 0px;
+	border-top: 2px solid $purple;
+	padding: 10px 20px;
+	background: url(/assets/images/memphis-colorful.png);
+	border-radius: 4px;
+	box-shadow: 0 4px 6px 0 rgba(0,0,0,.10);
+	transition: all 800ms ease;
+	z-index: 9999;
+
+	button {
+		background-image: -webkit-linear-gradient(left, #7157BE 0%, #573BA9 100%);
+		background-image: -o-linear-gradient(left, #7157BE 0%, #573BA9 100%);
+		background-image: linear-gradient(to right, #7157BE 0%, #573BA9 100%);
+		border-radius: 150px;
+		color: #fff;
+	}
+}
+
+#cta.show {
+	opacity: 1;
+	left: 20px;
+	transition: all 500ms ease;
+}
+
+#cta.hide {
+	opacity: 0;
+	left: 0;
+}
+
+#cta__close-btn {
+
+	z-index: 1;
+	
+
+    > span {
+    	position: absolute;
+	    right: 15px;
+	    font-size: 18px;
+	    top: 5px;
+    	color: #3a3a3a;
+    	cursor: pointer;
+    	background: #BDC1C9;
+    	color: #fff;
+    	height: 30px;
+    	width: 30px;
+    	border-radius: 150px;
+    	z-index: 2;
+
+    	> i {
+		    position: relative;
+		    top: 1px;
+    	}
+    }
+}
+
+#cta__img {
+	max-width: 220px;
+}
+
+#cta__logo {
+	font-family: montserrat, $font-bold, helvetica;
+	font-weight: bold;
+	color: $blue;
+	text-shadow: 0 1px 1px 0 rgba(0,0,0,.4);
 }
 
 /******* ICONS ********/

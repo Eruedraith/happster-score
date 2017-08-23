@@ -11,6 +11,7 @@
 		<script src="https://use.fontawesome.com/818aa3bc58.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="/js/back-to-top.js"></script>
+		<script src="/js/cta.js"></script>
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="assets/images/favicon/hs-favicon.ico" />
@@ -36,6 +37,22 @@
 		<!-- BACK TO TOP BUTTON -->
 		<button id="back-to-top" class="btn"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 		<!-- END BACK TO TOP BUTTON -->
+
+		<!-- CTA -->
+		<div id="cta" class="text-center hidden-xs">
+			<div class="row">
+			<div id="cta__close-btn"><span><i class="fa fa-times" aria-hidden="true"></i></span></div>
+				<div class="col-sm-4 col-lg-4">
+					<h3>Say goodbye to toxic cultures.</h3>
+					<a href=""><button class="btn cta-btn">Learn more</button></a>
+				</div>
+				<div class="col-sm-8 col-lg-8">
+					<p id="cta__logo">happster</p>
+					<img id="cta__img" src="/assets/images/happster-app.gif">
+				</div>
+			</div>
+		</div>
+		<!-- END CTA-->
 
 		<!-- SEARCH BAR FOR MOBILE-ONLY -->
 		<section id="mobile-only-search" class="visible-xs">
@@ -87,7 +104,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="company-info-container">
+
+					<!-- TRENDS -->
+					<!-- <div class="company-info-container">
 						<h2 class="text-center"><i class="fa fa-area-chart" aria-hidden="true"></i> Trends</h2>
 						<div class="company-trends">
 							<p>PROS</p>
@@ -98,7 +117,8 @@
 						<div class="company-trends">
 							<p>Advice to Management:</p>
 						</div>
-					</div>
+					</div> -->
+					<!-- END TRENDS -->
 
 				</div>
 			  <!-- END SIDEBAR -->
@@ -194,6 +214,7 @@
 							</ul>
 						</div>
 					</div>
+					<button class="btn center-block happster-btn clear">Load more</button>
 				</div>
 			</div>
 		</div>
