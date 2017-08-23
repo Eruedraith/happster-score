@@ -96,7 +96,8 @@ body {
 #hp-container-3 {
   color: #54C5C9;
   padding: 20px 0 0;
-  border-top: 1px solid #eff3f8; }
+  border-top: 1px solid #eff3f8;
+  position: relative; }
   #hp-container-3 button {
     margin-top: 20px; }
 
@@ -104,6 +105,12 @@ body {
   position: absolute;
   left: 0;
   max-width: 476px; }
+
+#hp-container-3__img-2 {
+  position: absolute;
+  max-width: 350px;
+  right: 15px;
+  bottom: 0; }
 
 #cta-img {
   max-width: 100px;
@@ -415,6 +422,13 @@ input[type="text"]::-webkit-input-placeholder {
     padding: 24px 15px 50px; }
   #hp-container-2 {
     padding: 13px 15px 50px; }
+  #hp-container-3 {
+    padding-bottom: 185px; }
+  #hp-container-3__img-2 {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px; }
   .hp-box {
     margin-top: 50px; }
   .company-info-container {
