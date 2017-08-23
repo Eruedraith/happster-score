@@ -232,13 +232,16 @@ body {
     color: #fff; }
 
 #happster-search__navbar-btn {
-  padding: 9px 0 9px 9px;
-  font-size: 17px;
-  background: none;
-  border: none; }
+  font-size: 16px;
+  background: #573BA9;
+  border: none;
+  border-radius: 150px;
+  height: 30px;
+  width: 30px;
+  padding: 0; }
   #happster-search__navbar-btn:hover {
-    color: #573BA9;
-    background: none;
+    color: #fff;
+    background: #3E2587;
     border: none; }
 
 #back-to-top {
@@ -368,7 +371,9 @@ body {
   -moz-transition: all .5s ease;
   transition: all .5s ease;
   padding: 10px 19px;
-  width: 200px; }
+  width: 200px;
+  background: #fff;
+  color: #5a5a5a; }
   #happster-search-form__navbar input:focus {
     width: 250px; }
 
